@@ -23,6 +23,7 @@
     second = second < 10 ? '0' + second : second;
   
     const now = `${year}년 ${month}월 ${date}일 ${day} ${hour}:${minute}:${second} ${ampm}`;
+    
   
     console.log(now);
     setTimeout(printNow, 1000);
