@@ -2,29 +2,93 @@
 <html>
   <head>
     <style>
-      .container {
-        background-color: powderblue;
-        height: 200px;
+      body {
         display: flex;
-        flex-direction: row;
+        align-items: center;
+        /* height: 1000px; */
+        justify-content: center;
       }
-      .item {
-        background-color: tomato;
-        color: white;
-        border: 1px solid white;
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        border: 1px solid gray;
       }
-      .item:nth-child(2) {
-        /* flex-basis: 200px; */
+      header {
+        border-bottom: 1px solid gray;
+        padding-left: 20px;
+      }
+      footer {
+        border-top: 1px solid gray;
+        padding: 20px;
+        /* margin: 20px; */
+        text-align: center;
+      }
+      .content {
+        display: flex;
+      }
+      .content nav {
+        border-right: 1px solid gray;
+        order: 1;
+      }
+      .content aside {
+        border-left: 1px solid gray;
+        order: -1;
+      }
+
+      nav,
+      aside {
+        flex-basis: 150px;
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+
+      main {
+        padding: 10px;
+        flex-grow: 1;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="item">1</div>
-      <div class="item">2</div>
-      <div class="item">3</div>
-      <div class="item">4</div>
-      <div class="item">5</div>
+      <header>
+        <h1>생활코딩</h1>
+      </header>
+      <section class="content">
+        <nav>
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+          </ul>
+        </nav>
+        <main>
+          생활코딩은 일반인을 위한 코딩 수업입니다.생활코딩은 일반인을 위한 코딩
+          수업입니다.생활코딩은 일반인을 위한 코딩 수업입니다.생활코딩은
+          일반인을 위한 코딩 수업입니다.생활코딩은 일반인을 위한 코딩
+          수업입니다.생활코딩은 일반인을 위한 코딩 수업입니다.생활코딩은
+          일반인을 위한 코딩 수업입니다.생활코딩은 일반인을 위한 코딩
+          수업입니다.생활코딩은 일반인을 위한 코딩 수업입니다.생활코딩은
+          일반인을 위한 코딩 수업입니다.생활코딩은 일반인을 위한 코딩
+          수업입니다.생활코딩은 일반인을 위한 코딩 수업입니다.생활코딩은
+          일반인을 위한 코딩 수업입니다.생활코딩은 일반인을 위한 코딩
+          수업입니다.생활코딩은 일반인을 위한 코딩 수업입니다.생활코딩은
+          일반인을 위한 코딩 수업입니다. 생활코딩은 일반인을 위한 코딩
+          수업입니다.생활코딩은 일반인을 위한 코딩 수업입니다.생활코딩은
+          일반인을 위한 코딩 수업입니다.생활코딩은 일반인을 위한 코딩
+          수업입니다.생활코딩은 일반인을 위한 코딩 수업입니다.생활코딩은
+          일반인을 위한 코딩 수업입니다.생활코딩은 일반인을 위한 코딩
+          수업입니다.생활코딩은 일반인을 위한 코딩 수업입니다.생활코딩은
+          일반인을 위한 코딩 수업입니다.생활코딩은 일반인을 위한 코딩
+          수업입니다.생활코딩은 일반인을 위한 코딩 수업입니다.생활코딩은
+          일반인을 위한 코딩 수업입니다.생활코딩은 일반인을 위한 코딩
+          수업입니다.생활코딩은 일반인을 위한 코딩 수업입니다.생활코딩은
+          일반인을 위한 코딩 수업입니다.생활코딩은 일반인을 위한 코딩
+          수업입니다.
+        </main>
+        <aside>AD</aside>
+      </section>
+      <footer><a href="https://naver.com">네이버</a></footer>
     </div>
   </body>
 </html>
